@@ -4,7 +4,7 @@ from flask_pymongo import pymongo
 from flask import jsonify, request
 from pymongo import MongoClient
 
-con_string ="mongodb+srv://micky:Power%40!926@cluster0.ziiirqp.mongodb.net/?retryWrites=true&w=majority"
+con_string ="mongodb+srv://micky:<password>@cluster0.ziiirqp.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(con_string )
 db = client['sampledb']
 user_collection = db['sample'] 
